@@ -1,0 +1,13 @@
+version: '3'
+services:
+  gradio_app:
+    build: .
+    ports:
+      - "7860:7860"
+    deploy:
+      resources:
+        limits:
+          memory: 8000M
+    volumes:
+      - ./donnees:/Workspace/flagged
+      - ./huggingface_cache:/home/appuser/.cache/huggingface

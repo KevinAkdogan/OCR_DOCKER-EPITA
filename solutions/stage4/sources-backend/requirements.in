@@ -1,0 +1,5 @@
+celery
+transformers
+Pillow
+torch
+torchvision
